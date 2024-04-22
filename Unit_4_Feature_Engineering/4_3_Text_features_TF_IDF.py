@@ -16,7 +16,7 @@ corpus = ['Martin is not a bad person.',
 
 #%% create TF-IDF tokenizer without normalization
 TFIDF= TfidfVectorizer(lowercase=False, \
-    norm=False, stop_words='english')
+    norm=None, stop_words='english')
 
 #%% fit tokenizer
 TFIDFtext = TFIDF.fit_transform(corpus)
