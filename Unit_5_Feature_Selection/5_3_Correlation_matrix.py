@@ -47,12 +47,12 @@ XY.corr(method='pearson')
 # y	-0.71687	1.00000
 
 #%% test for normal distribution of the data
-stats.normaltest(XY['x'])
+stats.normaltest(dat['x'])
 # console output:
 # NormaltestResult(statistic=2.02697581498966, 
 # pvalue=0.362950830342156)
 
-stats.normaltest(XY['y'])
+stats.normaltest(dat['y'])
 # console output:
 # NormaltestResult(statistic=19.779358749097575, 
 # pvalue=5.0695197559354735e-05)
@@ -60,7 +60,7 @@ stats.normaltest(XY['y'])
 #%%
 # compute Spearman’s rank correlation and
 # display the correlation matrix
-XY.corr(method='spearman')
+dat.corr(method='spearman')
 
 # console output:
 # 	x	    y
